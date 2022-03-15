@@ -1,1 +1,1 @@
-deno run --allow-net --allow-read server.ts
+deno run --allow-net --allow-read --inspect $1/main.ts
