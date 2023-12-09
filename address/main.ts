@@ -8,10 +8,14 @@ async function handler(req: Request) {
       referer: 'https://www.searchpeoplefree.com/phone-lookup',
     }
   })
-  const headers = new Headers(resp.headers)
+
+
+
   return new Response(resp.body, {
     status: resp.status,
-    headers: headers
+    headers: {
+      contentType: 'text/plain',
+    }
   })
 }
 
